@@ -4,7 +4,7 @@ import {CanopyHeader, CanopyFooter} from "@canopy-iiif/app/ui";
 export function Head() {
   return (
     <>
-      <Meta siteTitle="Site Title" />
+      <Meta siteTitle="Escape & Emancipation" />
       <Stylesheet />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link
@@ -25,15 +25,18 @@ export function App({children}) {
     <>
       <CanopyHeader
         navigation={[
-          {href: "/search", label: "Works"},
-          {href: "/about", label: "About"},
+          {href: "/search", label: "Letters"},
+          {href: "/about", label: "Douglass"},
         ]}
-        title="Site Title"
+        title="Escape & Emancipation"
         logo={Logo}
       />
       <main>{children}</main>
       <CanopyFooter>
-        <p>Copyright 2025 Site Title, MIT License. A Canopy IIIF Project.</p>
+        <p>
+          Copyright 2025 Escape & Emancipation, MIT License. A Canopy IIIF
+          Project.
+        </p>
       </CanopyFooter>
     </>
   );
